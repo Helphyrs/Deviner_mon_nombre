@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin:0;
+}
+header {
+    background: linear-gradient(to bottom, #c31432, #240b36);
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 5rem;
+    color: #ff1a75;
+}
+footer {
+    background:linear-gradient(to top, #c31432, #240b36);
+    height:200px;
+}
+main {
+    background:linear-gradient(to top,#240b36, #000000, #000000,#240b36 );
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+input {
+    padding:1rem;
+    margin:2rem;
+    font-size: 2rem;
+    border-radius:2rem;
+    background-color: black;
+    color:white;
+    border-color:white;
+}
+input:hover {
+    background-color:white;
+    color:black
+}
+button {
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: #000000;
+    color:white;
+    border-color:white;
+}
+button:hover {
+    background-color: white;
+    color:black
+}
+button:active {
+    background-color:grey;
+    border-color: grey;
+}
