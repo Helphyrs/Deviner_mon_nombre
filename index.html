@@ -7,18 +7,30 @@
      <title>Deviner mon nombre</title>
      <link rel="stylesheet" href="style.css" text="text/css">
      <link rel="scriptsheet" href="script.js" text="text/js">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
  <body>
      <header>
          <h1>Deviner le chiffre</h1>
      </header>
      <main>
-         <form action="">
-             <label for="nombre">Nombre</label>
-             <input type="number" id="nombre" name="nombre">
-             <button id="bouton">Envoyer</button>
+        <div class="firefire"><i class="fa-solid fa-fire-flame-curved" id="feu"></i></div>
+        <div class="snowsnow"><i class="fa-solid fa-snowflake" id="snow"></i></div>
+        <div class="arrowdown"><i class="fa-sharp fa-solid fa-arrow-down" id="arrowdown"></i></div>
+        <div class="arrowup"><i class="fa-solid fa-arrow-up" id="arrowup"></i></div>
+        <form method="post" name="postreply" onSubmit="suBmit() ; return false;" id="form">
+             <input type="number" id="nombre" name="nombre" autofocus>
+             <input type="submit">
          </form>
-
+         <div>
+            <p id="output"></p>
+            <p id="tentative"></p>
+            <p id="essais"></p>
+            <p id="paragraphe"></p>
+        </div>
      </main>
      <footer>
 
