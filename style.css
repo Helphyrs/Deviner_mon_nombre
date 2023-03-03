@@ -11,12 +11,18 @@ header, main, form {
     justify-content: center;
     align-items: center;
 }
+header {
+    flex-direction:column;
+}
+nav {
+    display:flex;
+}
 i {
     color:#f2f2f2;
     font-size: 5rem;
     margin: 0 2rem;
 }
-#feu,#snow,#arrowup,#arrowdown {
+#feu,#snow,#arrowup,#arrowdown, #correct {
     display:none;
 }
 .fa-snowflake {
@@ -62,13 +68,25 @@ input:hover, input:focus {
     background-color:#f2f2f2;
     color:#0d0d0d;
 }
-
+button {
+    border:5px ridge #f2f2f2;
+    background-color: #0d0d0d;
+    color:#f2f2f2;
+    cursor:pointer;
+    margin:1rem;
+}
+button:active {
+    background-color: #f2f2f2;
+    color:#0d0d0d;
+}
 .arrowup {
     animation-name: haut;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
+#Affichage {
+    text-align:center;
+}
 @keyframes haut {
     from { transform: translateY(100px);}
     to { transform:translateY(-100px)}
