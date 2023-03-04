@@ -8,17 +8,17 @@
      <link rel="stylesheet" href="style.css" text="text/css">
      <link rel="scriptsheet" href="script.js" text="text/js">
      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
  <body>
      <header>
          <h1>Deviner le chiffre</h1>
          <nav>
-            <button id="Difficulte">Sans Indices</button>
-            <button id="ChiffreJoueur">Mettez le chiffre que vous souhaitez</button>
-            <button id="Reset">Reset</button>
+             <button id="Difficulte">Sans Indices</button>
+             <button id="ChiffreJoueur">Mettez le chiffre que vous souhaitez</button>
+             <button id="Reset">Reset</button>
          </nav>
      </header>
      <main>
@@ -29,7 +29,7 @@
          <div class="arrowup"><i class="fa-solid fa-arrow-up" id="arrowup"></i></div>
          <form method="post" name="postreply" onSubmit="suBmit() ; return false;" id="form">
              <input type="number" id="nombre" name="nombre" autofocus max="1000">
-             <input type="submit">
+             <input type="submit" id="ElBouton" >
          </form>
          <div class="arrowdown"><i class="fa-sharp fa-solid fa-arrow-down" id="arrowdown_2"></i></div>
          <div class="arrowup"><i class="fa-solid fa-arrow-up" id="arrowup_2"></i></div>
@@ -43,6 +43,7 @@
              <p id="essais"></p>
              <p id="output"></p>
              <p id="Affichage"></p>
+             <p id="Affichage_difficulte">Indices : Avec</p>
      </footer>
      <div class="number">
          <span style="--i:10"><i class="fa-solid fa-6" ></i></span>

@@ -23,7 +23,7 @@ i {
     font-size: 5rem;
     margin: 1rem;
 }
-#feu,#snow,#arrowup,#arrowdown, #correct, #feu_2, #snow_2,#arrowup_2, #arrowdown_2, #correct_2 {
+#feu,#snow,#arrowup,#arrowdown, #correct, #feu_2, #snow_2,#arrowup_2, #arrowdown_2, #correct_2,#Affichage_difficulte_none {
     display:none;
 }
 .fa-snowflake {
@@ -61,14 +61,56 @@ p {
 input {
     margin:2rem;
     border-radius:2rem;
-    border-color:#f2f2f2;
+    border : 0.4rem solid #0d0d0d;
+}
+.inputErreur {
+    border: 0.4rem solid #660066;
+    animation-name:Erreur;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+}
+@keyframes Erreur {
+    0% {
+        transform:translateX(0);
+    }
+    10% {
+        transform:translateX(-1.2rem);
+    }
+    20% {
+        transform:translateX(1.2rem);
+    }
+    30% {
+        transform: translateX(-1.2rem);
+    }
+    40% {
+        transform:translateX(1.2rem);
+    }
+    50% {
+        transform: translateX(-1.2rem);
+    }
+    60% {
+        transform:translateX(1.2rem);
+    }
+    70% {
+        transform: translateX(-1.2rem);
+    }
+    80% {
+        transform:translateX(1.2rem);
+    }
+    90% {
+        transform: translateX(-1.2rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 input,label {
     padding:1rem;  
 }
-input:hover, input:focus {
-    background-color:#f2f2f2;
-    color:#0d0d0d;
+#ElBouton:active {
+    background-color: #0d0d0d;
+    color:#f2f2f2;
 }
 button {
     border:5px ridge #f2f2f2;
@@ -87,7 +129,7 @@ button:active {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-#Affichage {
+#Affichage,#Affichage_difficulte {
     text-align:center;
 }
 @keyframes haut {
@@ -112,6 +154,15 @@ button:active {
     from { transform: rotateZ(0);}
     to { transform:rotateZ(360deg)}
 }
+.snowsnow_2 {
+    animation-name: Neige_2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes Neige_2 {
+    from { transform: rotateZ(0);}
+    to { transform:rotateZ(-360deg)}
+}
 .firefire {
     animation-name: feu;
     animation-duration: 4s;
@@ -132,7 +183,7 @@ button:active {
 }
 .number span {
     animation-name: numero;
-    animation-duration: calc(50s/var(--i));
+    animation-duration: calc(120s/var(--i));
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index:0;
@@ -142,19 +193,17 @@ button:active {
         transform: translateY(-800px) rotateZ(360deg);
         opacity:1;
     }
-    15% {
+    10% {
         opacity:1;
     }
-    25% {
+    20% {
         opacity:0;
     }
-    80% {
-         opacity:0;
-    }
     85% {
-        opacity:1;
+         opacity:0;
     }
     100% {
         transform: translateY(200px);
+        opacity:1;
     }
 }
