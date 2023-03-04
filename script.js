@@ -112,6 +112,7 @@ function Reset() {
     essai.innerHTML ="";
     phrase2.innerHTML ="";
     phraseTentative.innerHTML="";
+    affichage.innerHTML = "Vous devez trouvé un nombre compris entre 0 et " + valeur;
 }
 function Determiner() {
     valeur = parseInt(window.prompt('Mettez un chiffre qui sera la valeur maximale que ce que vous voulez chercher ( valeur maximale : 1000000 )'))
